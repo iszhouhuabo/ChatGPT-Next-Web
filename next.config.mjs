@@ -39,6 +39,10 @@ const nextConfig = {
     return config;
   },
   output: "standalone",
+  env: {
+    // 没有搞懂重写之后为什么打字机效果会丢失,只能暂时使用参数导出方式,在 api 调用处使用
+    BASE_URL: process.env.BASE_URL?? "https://py.chatools.online",
+  },
 };
 
 export default nextConfig;

@@ -5,6 +5,7 @@ import { getHeaders } from "../client/api";
 import { BOT_HELLO } from "./chat";
 import { ALL_MODELS } from "./config";
 import { OPENAI_URL } from "@/app/api/common";
+import nextConfig from "@/next.config.mjs";
 
 export interface AccessControlStore {
   accessCode: string;
@@ -22,7 +23,6 @@ export interface AccessControlStore {
 }
 
 let fetchState = 0; // 0 not fetch, 1 fetching, 2 done
-let host = process.env.BASE_URL ?? "http://localhost:8000";
 
 export const useAccessStore = create<AccessControlStore>()(
   persist(
@@ -31,7 +31,7 @@ export const useAccessStore = create<AccessControlStore>()(
       accessCode: "",
       needCode: true,
       hideUserApiKey: false,
-      openaiUrl: host + "/api/openai/",
+      openaiUrl: nextConfig?.env?.BASE_URL + "/api/openai/",
 
       enabledAccessControl() {
         get().fetch();
@@ -55,7 +55,7 @@ export const useAccessStore = create<AccessControlStore>()(
       fetch() {
         if (fetchState > 0) return;
         fetchState = 1;
-        fetch(host + "/api/config", {
+        fetch(nextConfig?.env?.BASE_URL + "/api/config", {
           method: "post",
           body: null,
           headers: {
