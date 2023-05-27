@@ -82,7 +82,7 @@ export class ChatGPTApi implements LLMApi {
 
         controller.signal.onabort = finish;
 
-        fetchEventSource(chatPath, {
+        await fetchEventSource(chatPath, {
           ...chatPayload,
           async onopen(res) {
             clearTimeout(requestTimeoutId);
@@ -158,7 +158,7 @@ export class ChatGPTApi implements LLMApi {
         options.onFinish(message);
       }
     } catch (e) {
-      console.log("[Request] failed to make a chat reqeust", e);
+      console.log("[Request] failed to make a chat request", e);
       options.onError?.(e as Error);
     }
   }
