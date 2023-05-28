@@ -9,9 +9,9 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 
 一键免费部署你的私人 ChatGPT 网页应用。
 
-[Demo](https://chatgpt.nextweb.fun/) / [Issues](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [Buy Me a Coffee](https://www.buymeacoffee.com/yidadaa)
+[Demo](https://chatgpt.nextweb.fun/) / [Issues](https://github.com/iszhouhuabo/ChatGPT-Next-Web/issues) 
 
-[演示](https://chatgpt.nextweb.fun/) / [反馈](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [QQ 群](https://github.com/Yidadaa/ChatGPT-Next-Web/discussions/1724) / [打赏开发者](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg)
+[演示](https://chatgpt.nextweb.fun/) / [反馈](https://github.com/iszhouhuabo/ChatGPT-Next-Web/issues)  <!-- / [打赏开发者](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg) -->
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web)
 
@@ -20,12 +20,6 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 ![cover](./docs/images/cover.png)
 
 </div>
-
-## 重要通知
-## 本项目静默停更至 2023-06-03，不接受任何问题反馈，只接受社区 Pull Request，请在 PR 中详细描述解决的问题，否则会被立即关闭。
-
-## Attention
-## This project wont make any updates until June 3rd, 2023, and will not accept any issue feedback. Only community Pull Requests will be accepted, and please provide a detailed description of the problem being solved in the PR, otherwise it will be immediately closed.
 
 ## Features
 
