@@ -31,7 +31,7 @@ export const useAccessStore = create<AccessControlStore>()(
       accessCode: "",
       needCode: true,
       hideUserApiKey: false,
-      openaiUrl: nextConfig?.env?.BASE_URL + "/api/openai/",
+      openaiUrl: /*nextConfig?.env?.BASE_URL + */ "/api/openai/",
 
       enabledAccessControl() {
         get().fetch();
@@ -55,7 +55,7 @@ export const useAccessStore = create<AccessControlStore>()(
       fetch() {
         if (fetchState > 0) return;
         fetchState = 1;
-        fetch(nextConfig?.env?.BASE_URL + "/api/config", {
+        fetch(/*nextConfig?.env?.BASE_URL +*/ "/api/config", {
           method: "post",
           body: null,
           headers: {
